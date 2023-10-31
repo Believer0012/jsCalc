@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">    
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./calc.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="inner">
+            <h3 class=" ms-5 pt-2">Calculator</h3>
+            <input type="text" name="" id="result" class="form-control text-opacity-50" style="text-align: end;">
+            <div class="bttn pt-1 ">
+                <button onclick="displaydata(7)" type="button" class="btn btn-outline-secondary shadow">7</button>
+                <button onclick="displaydata(8)" type="button" class="btn btn-outline-secondary shadow">8</button>
+                <button onclick="displaydata(9)" type="button" class="btn btn-outline-secondary shadow">9</button>
+                <button onclick="displaydata('/')" type="button" class="btn btn-outline-warning shadow" style="width: 37px;">/</button>
+            </div>
+            <div class="bttn pt-1">
+                <button onclick="displaydata(4)" type="button" class="btn btn-outline-secondary shadow">4</button>
+                <button onclick="displaydata(5)" type="button" class="btn btn-outline-secondary shadow">5</button>
+                <button onclick="displaydata(6)" type="button" class="btn btn-outline-secondary shadow">6</button>
+                <button onclick="displaydata('*')" type="button" class="btn btn-outline-warning shadow" style="width: 37px;">*</button>
+            </div>
+            <div class="bttn pt-1">
+                <button onclick="displaydata(1)" type="button" class="btn btn-outline-secondary shadow">1</button>
+                <button onclick="displaydata(2)" type="button" class="btn btn-outline-secondary shadow">2</button>
+                <button onclick="displaydata(3)" type="button" class="btn btn-outline-secondary shadow">3</button>
+                <button onclick="displaydata('-')" type="button" class="btn btn-outline-warning shadow" style="width: 37px;">-</button>
+            </div>
+            <div class="bttn pt-1">
+                <button onclick="displaydata(0)" type="button" class="btn btn-outline-secondary shadow" >0</button>
+                <button onclick="displaydata('%')" type="button" class="btn btn-outline-warning shadow">%</button>
+                <button onclick="displaydata('+')" type="button" class="btn btn-outline-warning shadow">+</button>
+                <button onclick="backspace()" type="button" class="btn btn-outline-warning shadow">⌫</button>
+            </div>
+            <div class="bttn pt-1">
+                <button onclick="allclear()" type="button" class="btn btn-dark shadow" id="big">AC</button>
+                <button onclick="evaluateexp()"  type="submit" class="btn btn-outline-warning shadow" id="big">=</button>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./calc.js"></script>
+</html>
